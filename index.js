@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb://localhost:27017/mydatabase', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://arkar10kyaw333266:cQFUlgOVmwJnmEgt@arkar0.yqfwy4w.mongodb.net/', { useNewUrlParser: true, useUnifiedTopology: true });
 
 const userSchema = new mongoose.Schema({
   username: String,
