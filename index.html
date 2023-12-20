@@ -56,14 +56,32 @@
     <script>
         // Your existing JavaScript code remains unchanged
 
+        function openModal(imageSrc) {
+            var modal = document.getElementById('myModal');
+            var modalImage = document.getElementById('modalImage');
+            modal.style.display = 'block';
+            modalImage.src = imageSrc;
+        }
+
+        function closeModal() {
+            var modal = document.getElementById('myModal');
+            modal.style.display = 'none';
+        }
+
         function signIn() {
-            // Add your sign-in logic here
-            alert('Sign In logic goes here');
+            var username = document.getElementById('signin-username').value;
+            var password = document.getElementById('signin-password').value;
+
+            // Add your sign-in logic here, for example, show an alert with the credentials
+            alert('Sign In - Username: ' + username + ', Password: ' + password);
         }
 
         function signUp() {
-            // Add your sign-up logic here
-            alert('Sign Up logic goes here');
+            var username = document.getElementById('signup-username').value;
+            var password = document.getElementById('signup-password').value;
+
+            // Add your sign-up logic here, for example, show an alert with the new user's credentials
+            alert('Sign Up - Username: ' + username + ', Password: ' + password);
         }
     </script>
 
